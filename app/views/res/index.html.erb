@@ -1,8 +1,7 @@
 <% @res.each do |re| %>
   <%= re.some_attribute %>
-    <%= link_to "A"%>
-    <%= link_to "B"%>
-    <%= link_to "C"%>
-
+  <%= link_to("A", a_path(re), :method => :put, :confirm => "Are you sure?") %>
+  <%= link_to("B", b_path(re), :method => :put, :confirm => "Are you sure?") %>
+  <%= link_to("C", c_path(re), :method => :put, :confirm => "Are you sure?") %>
   <hr> <br>
 <% end %>
